@@ -3,9 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <title>學生卡片</title>
+
+  <style>
+    body {
+      font-family: 'Microsoft JhengHei', sans-serif;
+      background: #f3f3f3;
+      margin: 0;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .my-profile {
+      width: 90%;
+      max-width: 700px;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .my-profile img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ddd;
+    }
+
+    .my-profile h2 {
+      margin: 0 0 10px;
+    }
+
+    /* 學生卡片 */
+    .student-card {
+      width: 90%;
+      max-width: 600px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+    }
+
+    .student-card img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .student-info {
+      padding: 15px 20px;
+    }
+
+    .student-info h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+  </style>
 </head>
+
 <body>
 
+  <!-- ====== 你的個人照片區塊 ====== -->
+  <div class="my-profile">
+    <img src="images/myphoto.jpg" alt="我的照片">
+    <div>
+      <h2>我的個人資訊</h2>
+      <p>你好！這是我自己的照片區塊。</p>
+      <p>你可以在這裡放上自我介紹、學校、興趣或任何你想呈現的內容。</p>
+    </div>
+  </div>
+
+  <!-- ====== 學生卡片 ====== -->
   <div class="student-card">
     <img src="images/phoovanai.jpg" alt="王普奈 Phoovanai Mungkong">
     <div class="student-info">
@@ -17,4 +92,3 @@
   </div>
 
 </body>
-</html>
